@@ -8,22 +8,21 @@ public class Magister extends Mahasiswa implements Action {
     private String judulPenelitianTesis;
 
     public Magister(String nama, String alamat, String ttl, String telepon, String nim, String jurusan, ArrayList<MatkulAmbil> matkul, String judulPenelitianTesis) {
-        this.setNama(nama);
-        this.setAlamat(alamat);
-        this.setTtl(ttl);
-        this.setTelepon(telepon);
-        this.setNim(nim);
-        this.setJurusan(jurusan);
+        super(nama, alamat, ttl, telepon, nim, jurusan);
         this.matkul = matkul;
         this.judulPenelitianTesis = judulPenelitianTesis;
     }
 
-    public String getMatkul() {
+    public String getListMatkul() {
         String listMatkul = "";
         for (int i = 0; i < matkul.size(); i++) {
             listMatkul += i + 1 + ". " + matkul.get(i).getMatkulYangDiambil() + "\n";
         }
         return listMatkul;
+    }
+
+    public ArrayList<MatkulAmbil> getMatkul() {
+        return matkul;
     }
 
     public void setMatkul(ArrayList<MatkulAmbil> matkul) {
@@ -47,7 +46,7 @@ public class Magister extends Mahasiswa implements Action {
             "Telepon: " + getTelepon() + "\n" +
             "Nim: " + getNim() + "\n" +
             "Jurusan: " + getJurusan() + "\n" +
-            "Mata Kuliah yang Diambil:\n" + getMatkul() +
-            "Judul Penelitian Tesis: '" + judulPenelitianTesis + '\'';
+            "Mata Kuliah yang Diambil:\n" + getListMatkul() +
+            "Judul Penelitian Tesis: '" + getJudulPenelitianTesis() + '\n';
     }
 }

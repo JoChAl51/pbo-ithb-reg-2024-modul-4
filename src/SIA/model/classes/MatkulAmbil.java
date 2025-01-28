@@ -3,13 +3,13 @@ package SIA.model.classes;
 import java.util.ArrayList;
 
 public class MatkulAmbil {
-    private String matkulYangDiambil;
+    private Matakuliah matkulYangDiambil;
     private ArrayList<Presensi> presensi;
     private int n1;
     private int n2;
     private int n3;
 
-    public MatkulAmbil(String matkulYangDiambil, ArrayList<Presensi> presensi, int n1, int n2, int n3) {
+    public MatkulAmbil(Matakuliah matkulYangDiambil, ArrayList<Presensi> presensi, int n1, int n2, int n3) {
         this.matkulYangDiambil = matkulYangDiambil;
         this.presensi = presensi;
         this.n1 = n1;
@@ -17,11 +17,11 @@ public class MatkulAmbil {
         this.n3 = n3;
     }
 
-    public String getMatkulYangDiambil() {
+    public Matakuliah getMatkulYangDiambil() {
         return matkulYangDiambil;
     }
 
-    public void setMatkulYangDiambil(String matkulYangDiambil) {
+    public void setMatkulYangDiambil(Matakuliah matkulYangDiambil) {
         this.matkulYangDiambil = matkulYangDiambil;
     }
 

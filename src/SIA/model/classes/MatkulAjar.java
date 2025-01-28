@@ -3,19 +3,19 @@ package SIA.model.classes;
 import java.util.ArrayList;
 
 public class MatkulAjar {
-    private String matkulYangDiajar;
+    private Matakuliah matkulYangDiajar;
     private ArrayList<PresensiStaff> presensi;
 
-    public MatkulAjar(String matkulYangDiajar, ArrayList<PresensiStaff> presensi) {
+    public MatkulAjar(Matakuliah matkulYangDiajar, ArrayList<PresensiStaff> presensi) {
         this.matkulYangDiajar = matkulYangDiajar;
         this.presensi = presensi;
     }
 
-    public String getMatkulYangDiajar() {
+    public Matakuliah getMatkulYangDiajar() {
         return matkulYangDiajar;
     }
 
-    public void setMatkulYangDiajar(String matkulYangDiajar) {
+    public void setMatkulYangDiajar(Matakuliah matkulYangDiajar) {
         this.matkulYangDiajar = matkulYangDiajar;
     }
 

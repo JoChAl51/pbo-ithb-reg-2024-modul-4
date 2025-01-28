@@ -5,6 +5,12 @@ public class Matakuliah {
     private String kode;
     private int SKS;
 
+    public Matakuliah(String nama, String kode, int SKS) {
+        this.nama = nama;
+        this.kode = kode;
+        this.SKS = SKS;
+    }
+
     public String getNama() {
         return nama;
     }

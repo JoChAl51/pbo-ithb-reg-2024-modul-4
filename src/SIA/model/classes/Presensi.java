@@ -1,12 +1,10 @@
 package SIA.model.classes;
 
-import SIA.model.enumeration.Status;
-
 public class Presensi {
     private String tanggal;
-    private Status status;
+    private int status;
 
-    public Presensi(String tanggal, Status status) {
+    public Presensi(String tanggal, int status) {
         this.tanggal = tanggal;
         this.status = status;
     }
@@ -21,7 +19,7 @@ public class Presensi {
 
     public String getStatus() {
         String output = "";
-        if (status.equals(Status.HADIR)) {
+        if (status == 1) {
             output = "Hadir";
         } else {
             output = "Alpha";
@@ -29,7 +27,7 @@ public class Presensi {
         return output;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 }

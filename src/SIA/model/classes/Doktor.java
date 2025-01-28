@@ -9,19 +9,12 @@ public class Doktor extends Mahasiswa implements Action {
     private int nilaiSidang3;
 
     public Doktor(String nama, String alamat, String ttl, String telepon, String nim, String jurusan, String judulPenelitianDisertasi, int nilaiSidang1, int nilaiSidang2, int nilaiSidang3) {
-        this.setNama(nama);
-        this.setAlamat(alamat);
-        this.setTtl(ttl);
-        this.setTelepon(telepon);
-        this.setNim(nim);
-        this.setJurusan(jurusan);
+        super(nama, alamat, ttl, telepon, nim, jurusan);
         this.judulPenelitianDisertasi = judulPenelitianDisertasi;
         this.nilaiSidang1 = nilaiSidang1;
         this.nilaiSidang2 = nilaiSidang2;
         this.nilaiSidang3 = nilaiSidang3;
     }
-
-
 
     public String getJudulPenelitianDisertasi() {
         return judulPenelitianDisertasi;
@@ -67,6 +60,6 @@ public class Doktor extends Mahasiswa implements Action {
             "Judul Penelitian Disertasi: '" + judulPenelitianDisertasi + "'\n" +
             "Nilai Sidang 1: " + nilaiSidang1 + '\n' +
             "Nilai Sidang 2: " + nilaiSidang2 + '\n' +
-            "Nilai Sidang 3: " + nilaiSidang3;
+            "Nilai Sidang 3: " + nilaiSidang3 + '\n';
     }
 }

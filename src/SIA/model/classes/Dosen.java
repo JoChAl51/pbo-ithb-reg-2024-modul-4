@@ -6,6 +6,12 @@ public abstract class Dosen extends Staff {
     private String departemen;
     private ArrayList<MatkulAjar> matkul;
 
+    public Dosen(String nama, String alamat, String ttl, String telepon, String nik, String departemen, ArrayList<MatkulAjar> matkul) {
+        super(nama, alamat, ttl, telepon, nik);
+        this.departemen = departemen;
+        this.matkul = matkul;
+    }
+
     public String getDepartemen() {
         return departemen;
     }

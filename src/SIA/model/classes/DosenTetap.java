@@ -6,9 +6,8 @@ import java.util.ArrayList;
 public class DosenTetap extends Dosen implements Action {
     private int salary;
 
-    public DosenTetap(String departemen, ArrayList<MatkulAjar> matkul, int salary) {
-        this.setDepartemen(departemen);
-        this.setMatkul(matkul);
+    public DosenTetap(String nama, String alamat, String ttl, String telepon, String nik, String departemen, ArrayList<MatkulAjar> matkul, int salary) {
+        super(nama, alamat, ttl, telepon, nik, departemen, matkul);
         this.salary = salary;
     }
 
@@ -27,7 +26,9 @@ public class DosenTetap extends Dosen implements Action {
             "Alamat: " + getAlamat() + "\n" +
             "Tempat Tanggal Lahir: " + getTtl() + "\n" +
             "Telepon: " + getTelepon() + "\n" +
-            "Salary: " + salary + "\n" +
+            "NIK: " + getNik() + "\n" +
+            "Departemen: " + getDepartemen() + "\n" +
+            "Salary: " + getSalary() + "\n" +
             "Mata Kuliah yang Diambil:\n" + getMatkul();
     }
 }

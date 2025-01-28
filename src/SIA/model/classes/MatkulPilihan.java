@@ -6,6 +6,13 @@ public class MatkulPilihan {
     private int SKS;
     private int jumlahMinimum;
 
+    public MatkulPilihan(String nama, String kode, int SKS, int jumlahMinimum) {
+        this.nama = nama;
+        this.kode = kode;
+        this.SKS = SKS;
+        this.jumlahMinimum = jumlahMinimum;
+    }
+
     public String getNama() {
         return nama;
     }
